@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>まｐｐぼっくｓ</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="css/style.css" rel="stylesheet">-->
+        <style>
+            body {
+                font-size: 16px;
+                color: #333;
+            }
+        </style>
+        <link href="https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id='map' style='width: 400px; height: 300px;'></div>
+        <script src="https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js"></script>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoieXVpY2hpZnVqaXRhIiwiYSI6ImNqM2RzY3oxbzAwamsyd3BwNHhlOTB4YnEifQ.Y_OGqbUzRGZrKyxwwivYMw';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v9'
+            });
+        </script>
+    </body>
+</html>
